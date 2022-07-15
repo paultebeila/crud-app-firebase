@@ -36,14 +36,14 @@ function App() {
 
   //function to delete
   const deleteEmployee = async(id) => {
-    let employee = await doc(employeesRef, id);
+    let employee =  doc(employeesRef, id);
     await deleteDoc(employee);
     getEmployees();
   }
 
   //update function
   const updateEmployee = async(id) => {
-    let employee = await doc(employeesRef, id);
+    let employee = doc(employeesRef, id);
     await updateDoc(employee, {name:name1, lastname:lastname1, email:email1});
     getEmployees();
   }
@@ -51,7 +51,7 @@ function App() {
   //onload
   useEffect(()=>{
     getEmployees()
-  }, [])
+  })
   return (
     <div className="App">
       <div className='home'>

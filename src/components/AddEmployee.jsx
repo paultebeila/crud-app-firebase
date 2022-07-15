@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/addEmpl.css'
 
 const AddEmployee = ({ setName, setLastname, setEmail, addEmployee}) => {
     return (

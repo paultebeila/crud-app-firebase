@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/empList.css'
 
 const EmployeeList = ({ employees, deleteEmployee, updateEmployee }) => {
     return (
